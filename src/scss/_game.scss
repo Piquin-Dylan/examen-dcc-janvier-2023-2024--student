@@ -1,0 +1,102 @@
+.player-container {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 0;
+  flex-direction: column;
+  justify-content: stretch;
+  margin-bottom: 2rem;
+  color: $text;
+
+  &__player {
+    margin: 0;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: .5rem;
+    -webkit-box-shadow: 0 0 1.4rem 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 1.4rem 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 1.4rem 0 rgba(0, 0, 0, 0.75);
+    background: $back-color;
+
+    &__header {
+      text-align: center;
+      margin: 2rem 0 0;
+    }
+
+    &__avatar {
+      text-align: center;
+      font-size: 4rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    label {
+      margin: 2rem 0 0;
+      display: block;
+      text-align: center;
+    }
+
+  }
+}
+
+progress[value] {
+  margin-top: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: $text;
+  border-radius: .2rem;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: $text;
+  border-radius: .2rem;
+}
+
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.log {
+  margin-top: 7rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__item {
+    display: flex;
+    margin-bottom: 1rem;
+    background: $brown;
+    padding: 1rem;
+    border-radius: .5rem;
+
+    &:before {
+      content: counter(section) ": ";
+      margin-right: 1rem;
+      display: block;
+    }
+
+  }
+
+  &__item:nth-child(odd) {
+    counter-increment: section;
+    background: $brown--light;
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .player-container {
+    flex-direction: row;
+  }
+}

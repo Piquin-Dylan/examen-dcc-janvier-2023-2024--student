@@ -1,0 +1,57 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+  color: $text;
+  background: $back-color;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+button {
+  background: $brown;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: $text;
+  padding: 1rem;
+  text-align: center;
+  border-radius: .5rem;
+}
+input[type="text"] {
+    background: $brown--light;
+    border: 1px solid $brown;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: $text;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+::-moz-selection { /* Code for Firefox */
+  background: $text;
+  color: $back-color;
+}
+
+::selection {
+  background: $text;
+  color: $back-color;
+}
