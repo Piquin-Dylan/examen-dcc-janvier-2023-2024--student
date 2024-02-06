@@ -35,7 +35,7 @@ const game = {
      * This function display the remaining life of a player.
      */
     displayRemainingLife(player) {
-     ;
+     
     },
     /**
      * This function clear the logs.

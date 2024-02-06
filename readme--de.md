@@ -25,7 +25,7 @@
 
     3. Blende das Formular aus, indem du die Klasse `visuallyhidden` hinzufügst.
 
-    4. Blende das Element `div#controls` ein, indem du der Div-Klasse `visuallyhidden` entfernst.
+    4. Blende das Element `div.controls` ein, indem du der Div-Klasse `visuallyhidden` entfernst.
 
        ![Einreichen-des-Formulars-play-game](./img/Einreichen-des-Formulars-play-game.gif)
 
@@ -55,7 +55,7 @@
    In der generischen Funktion überprüfe, ob einer der Spieler gestorben ist. Wenn ja:
 
    1. Zeige das Formular `#play-game` an (entferne die Klasse `visuallyhidden`).
-   2. Verstecke die `div#controls` (füge die Klasse `visuallyhidden` hinzu).
+   2. Verstecke die `div.controls` (füge die Klasse `visuallyhidden` hinzu).
    3. Füge dem Formular `#play-game` eine Nachricht hinzu, die den Verlierer angibt (verwende `settings.messages.lost()`).
 
     ![Überprüfung-des-Todes-der-Spieler](img/Überprüfung-des-Todes-der-Spieler.gif)
@@ -77,6 +77,6 @@ Hier ist eine annotierte Bildschirmaufnahme mit Informationen zu den Klassen und
     1. Setze die Gesundheit beider Spieler auf 100 zurück (siehe `settings.health_max_value`).
     2. Entferne die Nachricht `p.log__item` aus dem Formular.
     3. Verstecke das Formular `#play-game` (entferne die Klasse `visuallyhidden`).
-    4. Zeige die `div#controls` an (füge der Div-Klasse `visuallyhidden` hinzu).
+    4. Zeige die `div.controls` an (füge der Div-Klasse `visuallyhidden` hinzu).
 
     ![soumission-du-formulaire-apres-la-fin-du-jeu](../examen-dcc-janvier-2023-2024/img/soumission-du-formulaire-apres-la-fin-du-jeu.gif)

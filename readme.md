@@ -28,7 +28,7 @@
 
     3. Faites disparaître le formulaire en lui ajoutant la classe `visuallyhidden`.
 
-    4. Faites apparaître l'élément `div#controls` en retirant la classe `visuallyhidden` à la div.
+    4. Faites apparaître l'élément `div.controls` en retirant la classe `visuallyhidden` à la div.
 
        ![soumission-du-formulaire-play-game](./img/soumission-du-formulaire-play-game.gif)
 
@@ -58,7 +58,7 @@
    Dans la fonction générique, vérifiez si l'un des joueurs est mort. Si c'est le cas :
 
    1. Affichez le formulaire `#play-game` (retirez la classe `visuallyhidden`).
-   2. Cachez la `div#controls` (ajoutez la classe `visuallyhidden`).
+   2. Cachez la `div.controls` (ajoutez la classe `visuallyhidden`).
    3. Ajoutez un message dans le formulaire `#play-game` indiquant le perdant (utilisez `settings.messages.lost()`).
 
     ![vérification-de-la-mort-des-joueurs](img/vérification-de-la-mort-des-joueurs.gif)
@@ -80,6 +80,6 @@ Voici une capture d'écran annotée, présentant des informations sur les classe
     1. Réinitialisez la santé des deux joueurs à 100 (cf. `settings.health_max_value`).
     2. Retirez le message `p.log__item` du formulaire.
     3. Cachez le formulaire `#play-game` (retirez la classe `visuallyhidden`).
-    4. Montrez la `div#controls` (ajoutez la classe `visuallyhidden` à la div).
+    4. Montrez la `div.controls` (ajoutez la classe `visuallyhidden` à la div).
 
     ![soumission-du-formulaire-apres-la-fin-du-jeu](img/soumission-du-formulaire-apres-la-fin-du-jeu.gif)
