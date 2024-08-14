@@ -4,14 +4,14 @@
 
 ## Préambule
 
-1. Dans le cadre de cet examen de *Développement Côté Client* vous devez uniquement vous focaliser sur les fichiers
+1. Dans le cadre de cet examen de *Développement Côté Client*, vous devez uniquement vous focaliser sur les fichiers
    JavaScript. Mis à part, ajouter ou modifier une balise `script`, on ne vous demande pas de modifier le code HTML ni
    le code CSS qui s'y rapporte.
-1. Cet examen dure *maximum 4 heures*.
-1. Vous devez respecter  [les bonnes pratiques vues en classe](https://github.com/hepl-dcc/dcc-guidelines).
-1. Tous les sélecteurs CSS dont vous avez besoin (pour cibler les éléments du DOM) ainsi que les paramètres du jeu sont
+2. Cet examen dure *maximum 4 heures*.
+3. Vous devez respecter [les bonnes pratiques vues en classe](https://github.com/hepl-dcc/dcc-guidelines).
+4. Tous les sélecteurs CSS dont vous avez besoin (pour cibler les éléments du DOM) ainsi que les paramètres du jeu sont
    définis dans l'objet `settings` du fichier `src/js/settings.js`.
-1. Vous pouvez, si vous le souhaitez, réaliser l'examen en TypeScript.
+5. Vous pouvez, si vous le souhaitez, réaliser l'examen en TypeScript.
 
 ## Énoncé 🎯
 
@@ -22,13 +22,13 @@
     
 2. **Soumission du formulaire `#play-game` :**
 
-    1. Mettez à jour le nom du premier joueur dans le tableau (`players[0].name`) en utilisant la valeur de l'input, par exemple : `event.currentTarget.querySelector('input').value`. 👌
+    1. Mettez à jour le nom du premier joueur dans le tableau (`players[0].name`) en utilisant la valeur de l'input. Par exemple : `event.currentTarget.querySelector('input').value`. 👌
 
     2. Mettez à jour le contenu textuel de la carte du premier joueur avec l'identifiant `#player-name` (cf. `strings.playerNameId`).
 
     3. Faites disparaître le formulaire en lui ajoutant la classe `visuallyhidden`.
 
-    4. Faites apparaître l'élément `div.controls` en retirant la classe `visuallyhidden` à la div.
+    4. Faites apparaître l'élément `div#controls` en lui retirant la classe `visuallyhidden`.
 
        ![soumission-du-formulaire-play-game](./img/soumission-du-formulaire-play-game.gif)
 
@@ -57,8 +57,8 @@
 7. **Vérification de la mort des joueurs :**
    Dans la fonction générique, vérifiez si l'un des joueurs est mort. Si c'est le cas :
 
-   1. Affichez le formulaire `#play-game` (retirez la classe `visuallyhidden`).
-   2. Cachez la `div.controls` (ajoutez la classe `visuallyhidden`).
+   1. Affichez le formulaire `#play-game` en retirant la classe `visuallyhidden`.
+   2. Cachez la `div.controls` en ajoutant la classe `visuallyhidden`.
    3. Ajoutez un message dans le formulaire `#play-game` indiquant le perdant (utilisez `settings.messages.lost()`).
 
     ![vérification-de-la-mort-des-joueurs](img/vérification-de-la-mort-des-joueurs.gif)
