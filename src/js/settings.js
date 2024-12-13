@@ -1,3 +1,4 @@
+
 export const settings = {
     defaultPlayerName1: 'John',
     playGameFormId: 'play-game',
@@ -14,6 +15,10 @@ export const settings = {
     givUpName: 'give-up',
     play_again_message: 'Rejouer',
     defaultPlayerName2: 'Monster',
+    nameInputElementId: 'name',
+
+    tie_message: (name) => `<p class="log__item"> Partie nulle !</p>`,
+
     lost_message: (name) => `<p class="log__item">${name} a perdu !</p>`,
     remaining_life_message: (value) => `${value}% de vie restante`,
     actions: {
